@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url('https://cdn.pixabay.com/photo/2016/05/31/10/18/great-bear-1426516__340.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.header {
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #101d42;
+  color: white;
+}
+
+.header h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.header h3 {
+  margin-bottom: 10px;
+}
+
+.header a {
+  color: rgb(215, 216, 237);
+  text-decoration: none;
+  font-weight: bold;
+}
+.header a:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+.header a:active {
+  color: rgb(221, 221, 254);
+}
+
+.header a:focus {
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+
+.contact {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  align-items: top;
+  flex-wrap: wrap;
+  line-height: 5px;
+}
+
+.contact p {
+  margin-bottom: 0;
+}
+
+.navbar {
+  background: transparent;
+  border-top: 1px solid rgba(99, 148, 197, 0.5);
+}
+
+.container {
+  padding: 40px;
+  /* color: white; */
+  border-bottom: 1px solid rgb(2, 1, 41);
+}
+
+.home img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.skills {
+  position: relative;
+  margin-top: 40px;
+  max-width: 500px;
+  border-top: 1px solid rgba(255, 49, 49, 0.5);
+  border-right: 1px solid rgba(0, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
+  border-left: 1px solid rgba(116, 116, 1, 0.5);
+  margin-bottom: 30px;
+}
+
+.skills span {
+  position: absolute;
+  border-radius: 100vmax;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(255, 49, 49, 0.5),
+    rgb(255, 49, 49)
+  );
+  animation: animateTop 3s ease-in-out infinite;
+}
+
+.bottom {
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(57, 255, 20),
+    rgba(57, 255, 20, 0.5),
+    transparent 50%
+  );
+  animation: animateBottom 3s ease-in-out infinite;
+}
+
+.right {
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 30%,
+    rgba(0, 255, 255, 0.5),
+    rgb(0, 255, 255)
+  );
+  animation: animateRight 3s ease-in-out infinite;
+}
+
+.left {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(254, 255, 113),
+    rgba(255, 255, 113, 0.5),
+    transparent 70%
+  );
+  animation: animateLeft 3s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+  25% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  0%,
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  75% {
+    opacity: 1;
+    width: 100%;
+  }
+
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateRight {
+  0%,
+  25% {
+    height: 0;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    height: 100%;
+  }
+
+  55%,
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes animateLeft {
+  0%,
+  75% {
+    opacity: 0;
+    height: 0;
+    bottom: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.skillList {
+  max-width: 500px;
+}
+
+.skillList li {
+  list-style: inside;
+  font-size: 1.5em;
+}
+
+.workButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.dropdown-menu > li {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.container .date {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.about p {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.about p::first-letter {
+  font-weight: bold;
+  font-size: 1.2em;
+}
